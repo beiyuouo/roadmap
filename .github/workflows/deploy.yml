@@ -33,6 +33,3 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: www.bj-yan.top
-          CONFIG_FILE: mkdocs.yml
-          REQUIREMENTS: requirements.txt
