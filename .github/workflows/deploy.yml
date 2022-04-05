@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.6
 
       - name: Install dependencies
         run: |
@@ -30,6 +30,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: www.bj-yan.top
+          CONFIG_FILE: mkdocs.yml
+          REQUIREMENTS: requirements.txt
