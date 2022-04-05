@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          print_info "setup with GITHUB_TOKEN"
+          echo "setup with GITHUB_TOKEN"
           remote_repo="https://x-access-token:${GITHUB_TOKEN}@${GITHUB_DOMAIN:-"github.com"}/${GITHUB_REPOSITORY}.git"
           if ! git config --get user.name; then
             git config --global user.name "${GITHUB_ACTOR}"
