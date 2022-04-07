@@ -97,4 +97,4 @@ $$
 ## References
 
 - 《机器学习理论导引》- 周志华
-- [斯坦福大学凸优化课程课件](https://www.stat.cmu.edu/~ryantibs/convexopt-F13/)
+- [斯坦福大学凸优化课程课件](https://www.stat.cmu.edu/~ryantibs/convexopt-F13/) - [6. Subgradients (Ryan)](https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf)
