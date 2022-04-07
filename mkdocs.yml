@@ -98,3 +98,15 @@ plugins:
 nav:
   - Home:
       - index.md
+  - "数学基础":
+      - mathematics/index.md
+  - "机器学习":
+      - "machine-learning/index.md"
+      - "机器学习理论":
+          - "machine-learning/theory/index.md"
+          - "常用公式及约定": common-used-formula.md
+          - "凸优化": "machine-learning/theory/convex-optimization.md"
+          - "收敛率": "machine-learning/theory/convergence-rate.md"
+      - "联邦学习":
+          - "machine-learning/federated-learning/index.md"
+  - "About": "about.md"
