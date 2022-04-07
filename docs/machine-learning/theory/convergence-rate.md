@@ -6,6 +6,7 @@
 ## 梯度下降收敛分析 (Gradient Descent Convergence Analysis)
 
 假设函数 $f: \mathbb{R}^{d}\to \mathbb{R}$ 是凸且可微分的，梯度满足 $l$-Lipschitz 连续，经过 $k$ 轮迭代，步长为 $t\leqslant \frac{1}{l}$，则解满足
+
 $$
 f(x^{(k)})-f(x^{\ast})\leqslant \frac{\|x^{(0)}-x^{\ast}\|}{2tk}
 $$
