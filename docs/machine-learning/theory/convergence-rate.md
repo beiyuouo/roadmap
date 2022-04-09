@@ -158,7 +158,7 @@ $$
 
 有因为左式 $\geqslant (T+1) \min_{k\in[T]} f(x^{k})-f(x^{\ast})$，稍微变形化简即可得到证明。
 
-如果此时要使得 $f(x^{k})-f(x^{\ast}) \leqslant \epsilon $，需要进行 $O(\frac{1}{\epsilon^2})$ 次迭代，小于梯度下降的收敛速率。
+如果此时要使得 $f(x^{k})-f(x^{\ast}) \leqslant \epsilon$，需要进行 $O(\frac{1}{\epsilon^2})$ 次迭代，小于梯度下降的收敛速率。
 
 
 ## References
