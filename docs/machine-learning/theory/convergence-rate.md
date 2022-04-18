@@ -2,7 +2,6 @@
 
 ## 基本概念
 
-
 ## 梯度下降收敛分析 (Gradient Descent Convergence Analysis)
 
 假设函数 $f: \mathbb{R}^{d}\to \mathbb{R}$ 是凸且可微分的，梯度满足 $l$-Lipschitz 连续，经过 $k$ 轮迭代，步长为 $t\leqslant \frac{1}{l}$，则解满足
@@ -13,7 +12,7 @@ $$
 
 收敛率为 $O(\frac{1}{k})$
 
-*Proof*:
+_Proof_:
 
 由 $f$ 满足 $l$-Lipschitz 连续，则 $\nabla f^{2} \preceq LI$，所以 $\nabla f^2 - LI$ 是一个负半正定矩阵。
 
@@ -46,10 +45,10 @@ $$
 由 $f$ 是凸函数
 
 $$
-f(x^{\ast}) \geqslant f(x) + \nabla f(x)^{T} (x^{\ast}-x)  
+f(x^{\ast}) \geqslant f(x) + \nabla f(x)^{T} (x^{\ast}-x)
 $$
 
-等价于 
+等价于
 
 $$
 f(x) \leqslant f(x^{\ast}) + \nabla f(x)^{T} (x-x^{\ast})
@@ -88,12 +87,11 @@ $$
 $$
 \begin{align*}
 f(x^{k})-f(x^{\ast}) &\leqslant \frac{1}{k}\sum_{i=1}^{k} (f(x^{i})-f(x^{\ast})) \\
-&\leqslant \frac{\|x^{(0)}-x^{\ast}\|}{2tk} 
+&\leqslant \frac{\|x^{(0)}-x^{\ast}\|}{2tk}
 \end{align*}
 $$
 
-
-因此，为了使得 $f(x^{k})-f(x^{\ast}) \leqslant \epsilon $，需要进行 $O(\frac{1}{\epsilon })$ 次迭代。
+因此，为了使得 $f(x^{k})-f(x^{\ast}) \leqslant \epsilon$，需要进行 $O(\frac{1}{\epsilon })$ 次迭代。
 
 ## 次梯度方法收敛分析 (Subgradient Method Convergence Analysis)
 
@@ -117,14 +115,12 @@ $$
 \begin{align*}
 \|x^{(k+1)}-x^{\ast}\|_2^2 &= \| x^{k}-x^{\ast} - \gamma \nabla f(x^{k})\|_2^2 \\
 &= \|x^{k} - x\|_2^2 - 2\gamma \nabla f(x^{k})^{T}(x^{k}-x^{\ast}) + \gamma^2 \|\nabla f(x^{k})\|_2^2 \\
-
 & \leqslant \|x^{k} - x\|_2^2 - 2\gamma (f(x^{k}) - f(x)) + \gamma^2 \|\nabla f(x^{k})\|_2^2
-
 \end{align*}
 $$
 
-通常在次梯度方法中不会选择 fix 的步长，通常会用 
-*Polyak step size*，即
+通常在次梯度方法中不会选择 fix 的步长，通常会用
+_Polyak step size_，即
 
 $$
 \gamma^k = \frac{f(x^{k}) - f(x^{\ast})}{\|\nabla f(x^{k})\|_2^2}
@@ -144,7 +140,7 @@ $$
 \min_{k\in [T]}f(x^{k})-f(x^{\ast}) \leqslant \frac{B\|x^{0}-x^{\ast}\|}{\sqrt{T+1}}
 $$
 
-*Proof:*
+_Proof:_
 
 $$
 \|x^{(k+1)}-x^{\ast}\|_2^2 \leqslant \|x^{k} - x^{\ast}\| -\frac{(f(x^{k}) - f(x^{\ast}))^2}{B^2}
@@ -159,7 +155,6 @@ $$
 有因为左式 $\geqslant (T+1) \min_{k\in[T]} f(x^{k})-f(x^{\ast})$，稍微变形化简即可得到证明。
 
 如果此时要使得 $f(x^{k})-f(x^{\ast}) \leqslant \epsilon$，需要进行 $O(\frac{1}{\epsilon^2})$ 次迭代，小于梯度下降的收敛速率。
-
 
 ## References
 
