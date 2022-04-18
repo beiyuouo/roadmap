@@ -97,9 +97,20 @@ plugins:
 
 nav:
   - Home:
-      - index.md
+      - "index.md"
   - "数学基础":
-      - mathematics/index.md
+      - "mathematics/index.md"
+  - "计算机科学":
+      - "computer-science/index.md"
+      - "计算图形学":
+          - "computer-science/computer-graphics/index.md"
+          - "Taichi": "computer-science/computer-graphics/taichi.md"
+      - "游戏引擎":
+          - "computer-science/game-engine/index.md"
+      - "软件架构":
+          - "computer-science/software-architecture/index.md"
+      - "编程语言":
+          - "computer-science/programming-language/index.md"
   - "机器学习":
       - "machine-learning/index.md"
       - "机器学习理论":
