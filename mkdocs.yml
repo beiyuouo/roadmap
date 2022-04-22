@@ -98,8 +98,10 @@ plugins:
 nav:
   - Home:
       - "index.md"
+
   - "数学基础":
       - "mathematics/index.md"
+
   - "计算机科学":
       - "computer-science/index.md"
       - "计算图形学":
@@ -107,10 +109,29 @@ nav:
           - "Taichi": "computer-science/computer-graphics/taichi.md"
       - "游戏引擎":
           - "computer-science/game-engine/index.md"
+          - "Lecture 01": "computer-science/game-engine/lecture-01.md"
+          - "Lecture 02": "computer-science/game-engine/lecture-02.md"
+          - "Lecture 03": "computer-science/game-engine/lecture-03.md"
+          - "Lecture 04": "computer-science/game-engine/lecture-04.md"
+          - "Lecture 05": "computer-science/game-engine/lecture-05.md"
+          - "Lecture 06": "computer-science/game-engine/lecture-06.md"
       - "软件架构":
           - "computer-science/software-architecture/index.md"
       - "编程语言":
           - "computer-science/programming-language/index.md"
+      - "博客引擎":
+          - "computer-science/blog-engine/index.md"
+          - "mkdocs": "computer-science/blog-engine/mkdocs.md"
+          - "hugo": "computer-science/blog-engine/hugo.md"
+      - "元宇宙":
+          - "computer-science/metaverse/index.md"
+          - "Web 3.0": "computer-science/metaverse/web-3-0.md"
+          - "NFT": "computer-science/metaverse/nft.md"
+          - "区块链": "computer-science/metaverse/blockchain.md"
+      - "Misc":
+          - "computer-science/misc/index.md"
+          - "Git": "computer-science/misc/git.md"
+
   - "机器学习":
       - "machine-learning/index.md"
       - "机器学习理论":
@@ -120,4 +141,5 @@ nav:
           - "收敛率": "machine-learning/theory/convergence-rate.md"
       - "联邦学习":
           - "machine-learning/federated-learning/index.md"
+
   - "About": "about.md"
