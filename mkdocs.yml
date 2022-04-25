@@ -117,6 +117,9 @@ nav:
           - "Lecture 06": "computer-science/game-engine/lecture-06.md"
       - "软件架构":
           - "computer-science/software-architecture/index.md"
+      - "操作系统":
+          - "computer-science/operating-system/index.md"
+          - "ubuntu": "computer-science/operating-system/ubuntu.md"
       - "编程语言":
           - "computer-science/programming-language/index.md"
       - "博客引擎":
@@ -139,6 +142,9 @@ nav:
           - "常用公式及约定": "machine-learning/theory/formula.md"
           - "凸优化": "machine-learning/theory/convex-optimization.md"
           - "收敛率": "machine-learning/theory/convergence-rate.md"
+      - "深度学习":
+          - "machine-learning/deep-learning/index.md"
+          - "注意力机制": "machine-learning/deep-learning/attention.md"
       - "联邦学习":
           - "machine-learning/federated-learning/index.md"
 
