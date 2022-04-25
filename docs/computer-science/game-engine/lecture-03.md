@@ -28,3 +28,25 @@ GO 之间的通讯和交互如何做呢？
 解耦合的 Event 机制：发送事件，接收事件，事件处理
 
 如何管理 GO 呢？
+
+- 首先 GO 管理其实是在一个 Scene 中的
+- 对于一个 GO 他都会有一个独立的 ID，这个 ID 可以用来唯一标识 GO
+- 同时也可以用过 GO 的 position 来查询
+
+接下来就成了怎么管理一个场景？
+
+- 对于简单的场景，可以直接不用任何数据结构进行管理
+- 稍微复杂的场景可以使用八叉树进行管理
+
+现在游戏引擎常用的场景管理方式有
+
+- Bounding Volume Hierarchy（BVH）
+- Binary Space Partitioning（BSP）
+- Octree
+- Scene Graph
+
+## 复杂情况处理
+
+消息机制的时序问题（Immediate Event Sending or not）：引入邮局机制
+
+组件依赖（Component Dependencies）
