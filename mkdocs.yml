@@ -122,6 +122,7 @@ nav:
           - "ubuntu": "computer-science/operating-system/ubuntu.md"
       - "编程语言":
           - "computer-science/programming-language/index.md"
+          - "Python": "computer-science/programming-language/python.md"
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
