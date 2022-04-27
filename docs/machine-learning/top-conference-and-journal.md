@@ -21,7 +21,7 @@
 
 ## 期刊
 
-《Journal of Machine Learning Research》
-《Machine Learning》
-《Artificial Intelligence》
-《Annals of Statistics》
+- 《Journal of Machine Learning Research》
+- 《Machine Learning》
+- 《Artificial Intelligence》
+- 《Annals of Statistics》
