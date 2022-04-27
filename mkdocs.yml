@@ -129,7 +129,10 @@ nav:
           - "ROS": "computer-science/robotics/ros.md"
       - "编程语言":
           - "computer-science/programming-language/index.md"
-          - "Python": "computer-science/programming-language/python.md"
+          - "Python":
+              - "computer-science/programming-language/python/index.md"
+              - "pytorch": "computer-science/programming-language/python/pytorch.md"
+              - "jinja2": "computer-science/programming-language/python/jinja2.md"
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
