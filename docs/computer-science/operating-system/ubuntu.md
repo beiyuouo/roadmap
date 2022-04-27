@@ -67,3 +67,36 @@ BOOT - UEFI Hard Disk Drive BBS Priorities - ubuntu
 - Conda
 - v2rayA(这个单词不知道怎么出现在这里的)
 - VS Code
+
+## 服务器
+
+如果要做服务器使用，需要退出依然执行，那么可以选择以下方式：
+
+- screen
+- tmux
+
+```bash
+# 安装 screen
+sudo apt install screen
+# 创建一个新的终端
+screen -S [name]
+# 离线终端
+screen -d [name]
+# 恢复到这个终端
+screen -r [name]
+# 先恢复，如果没有就创建
+screen -R
+# 恢复之前离线的终端
+screen -x
+# 缓冲区行数
+screen -h [length]
+# 清理离线的终端
+screen -wipe
+# 列出所有终端
+screen -ls
+```
+
+```bash
+# 安装 tmux
+sudo apt install tmux
+```

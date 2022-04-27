@@ -101,6 +101,9 @@ nav:
 
   - "数学基础":
       - "mathematics/index.md"
+      - "概率论": "mathematics/probability.md"
+      - "矩阵论": "mathematics/matrix.md"
+      - "数论": "mathematics/number.md"
 
   - "计算机科学":
       - "computer-science/index.md"
@@ -120,6 +123,9 @@ nav:
       - "操作系统":
           - "computer-science/operating-system/index.md"
           - "ubuntu": "computer-science/operating-system/ubuntu.md"
+      - "机器人学":
+          - "computer-science/robotics/index.md"
+          - "ROS": "computer-science/robotics/ros.md"
       - "编程语言":
           - "computer-science/programming-language/index.md"
           - "Python": "computer-science/programming-language/python.md"
@@ -138,6 +144,7 @@ nav:
 
   - "机器学习":
       - "machine-learning/index.md"
+      - "顶会顶刊": "machine-learning/top-conference-and-journal.md"
       - "机器学习理论":
           - "machine-learning/theory/index.md"
           - "常用公式及约定": "machine-learning/theory/formula.md"
@@ -148,5 +155,6 @@ nav:
           - "注意力机制": "machine-learning/deep-learning/attention.md"
       - "联邦学习":
           - "machine-learning/federated-learning/index.md"
+          - "框架": "machine-learning/federated-learning/framework.md"
 
   - "About": "about.md"

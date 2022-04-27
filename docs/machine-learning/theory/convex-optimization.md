@@ -8,6 +8,19 @@ $$
 \theta x_1 + (1-\theta) x_2  \in C, (\forall 0 \leqslant \theta \leqslant 1)
 $$
 
+**性质**
+凸集也有一些重要的性质
+
+凸集的交、和、直和也是凸集
+
+$\mathcal{C_1,C_2}$ are convex sets, then
+
+$\mathcal{C}=\mathcal{C_1} \cap \mathcal{C_2}$ is convex set.
+
+$\mathcal{C}=\{x+y|x\in \mathcal{C_1}, y\in \mathcal{C_2}\}$ is convex set.
+
+$\mathcal{C}=\{x\oplus y|x\in \mathcal{C_1}, y\in \mathcal{C_2}\}$ is convex set.
+
 ## 凸函数
 
 对定义在凸集上的函数 $f:\mathbb{R}^d\to \mathbb{R}$，令 $\Psi$ 表示其定义域，若 $\forall x, z \in \Psi$ 均满足
@@ -28,7 +41,7 @@ $$
 
 如果添加条件 $x\neq y$，则取不到等号。
 
-*Proof:*
+_Proof:_
 
 对任意 $0 < t \leqslant 1$，$x + t(y-x) \in \text{dom} f$，由函数 $f$ 的凸性可得
 
@@ -80,10 +93,42 @@ $$
 \nabla ^2 f(x) \succeq 0
 $$
 
-*Proof:*
+_Proof:_
 
 ~~[留坑]~~
 
+### 性质
+
+_Jesen's Inequality_
+
+Let $f$ be convex, $x_1,x_2,\cdots,x_m \in \mathbb{R}^n$ and $\lambda_1,\lambda_2,...,\lambda_m ∈\mathbb{R}^{+}$ such that $\sum_{i=1}^{m} \lambda_i = 1$.
+Then, $f(\sum_{i=1}^{m}\lambda_i x_i)\leqslant \sum_{i=1}^{m}\lambda_i f(x_i)$
+
+- 当 m=2 时，退化成上面的定义
+- 在概率论中，一个凸函数$\phi$，有{{< mathi >}}$\phi(E[x])\leqslant E[\phi(x)]${{< /mathi >}}
+
+### 如何保留函数的凸性质
+
+我们令$\Gamma $表示是凸函数的集合
+
+1. $f_1,f_2\in \Gamma \Rightarrow w_1f_1+w_2f_2\in \Gamma$
+
+2. $f\in \Gamma \Rightarrow f(Ax+b)\in \Gamma$
+
+_Proof:_ $f\in \Gamma$ 就有 $\forall x,y, f(\theta x+(1-\theta)y)\leqslant \theta f(x) + (1-\theta)f(y)$, 让$x=Ax+b$换元，那么就有
+$$f(A(\theta x+(1-\theta)y)+b)\leqslant \theta f(Ax+b) + (1-\theta)f(Ay+b)$$
+
+这里把$b$拆出$\theta$和$1-\theta$变成$(\theta + (1-\theta))b$，上面的式子就可以变成
+
+$$f(\theta (Ax+b)+(1-\theta)(Ay+b))\leqslant \theta f(Ax+b) + (1-\theta)f(Ay+b)$$
+
+即完成证明。
+
+3. $f_1,f_2\in \Gamma \Rightarrow \max\{f_1,f_2\}\in \Gamma$
+
+4. If $f$ is convex in $x$ for each $z\in Z$, then
+
+$$g(x):=\max_{z\in Z}f(x,z) \in \Gamma$$
 
 ## $\lambda$-强凸
 
