@@ -50,8 +50,13 @@ Presume that $r$ is the maxium $\gcd(a,b)$, and $r$ is different from $r'$ which
 
 It means $r > r'$.
 
-$$a=pr, b=qr, a\% b=pr-kqr$$
-$$r\mid b, r\mid (a\% b), r>r'$$
+$$
+a=pr, b=qr, a\% b=pr-kqr
+$$
+
+$$
+r\mid b, r\mid (a\% b), r>r'
+$$
 
 so $r$ is maxium $\gcd(b, a\% b)$, it's against to the condition which we presumed.
 so $r$ is the maxium $\gcd(a, b)$ and $\gcd(a, a\% b)$.
