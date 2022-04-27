@@ -21,10 +21,14 @@
 
 1. $\partial(X^{-1})=X^{-1}\partial (X)X^{-1}$
 
-   _Proof_. $$\partial(X^{-1}X)=\partial(I)=0$$
-   $$\partial(X^{-1}X)=\partial(X^{-1})X+X^{-1}\partial (X)$$
-   $$\Rightarrow \partial(X^{-1})X+X^{-1}\partial(X)=0$$
-   $$\Rightarrow \partial(X^{-1})=-X^{-1}\partial(X)X^{-1}$$
+   _Proof_.
+
+$$
+\partial(X^{-1}X)=\partial(I)=0 \\
+\partial(X^{-1}X)=\partial(X^{-1})X+X^{-1}\partial (X) \\
+\Rightarrow \partial(X^{-1})X+X^{-1}\partial(X)=0 \\
+\Rightarrow \partial(X^{-1})=-X^{-1}\partial(X)X^{-1}
+$$
 
 矩阵微分依然满足求导中的规则，但在一下情况下有所变化
 
@@ -54,7 +58,7 @@ $$
 \frac{\partial{\text{x}^{T}A\text{x}}}{\partial \text{x}}=(A\text{x})^{T}\frac{\partial{\text{x}^{T}}}{\partial \text{x}}+\text{x}^{T}\frac{\partial{A\text{x}}}{\partial \text{x}}=\text{x}^{T}A^{T}+\text{x}^{T}A=\text{x}^{T}(A+A^{T})
 $$
 
-    注意这里其实还涉及一个公式$\frac{\partial{u^{T}v}}{\partial \text{x}}=u^{T}\frac{\partial v}{\partial \text{x}}+v^{T}\frac{\partial u}{\partial \text{x}},u=u(x),v=v(x),u,v\text{ is vector}$，这里出现这样的公式的结果主要是因为上面是一个标量，最后求出来的应该是一个行向量，所以才需要加上转置保证结果的形式正确。
+注意这里其实还涉及一个公式$\frac{\partial{u^{T}v}}{\partial \text{x}}=u^{T}\frac{\partial v}{\partial \text{x}}+v^{T}\frac{\partial u}{\partial \text{x}},u=u(x),v=v(x),u,v\text{ is vector}$，这里出现这样的公式的结果主要是因为上面是一个标量，最后求出来的应该是一个行向量，所以才需要加上转置保证结果的形式正确。
 
 > 这里我插一嘴，我觉得这个结果的形状真的是玄学，虽然你都可以通过展开公式进行证明，但是都感觉怪怪的...
 
