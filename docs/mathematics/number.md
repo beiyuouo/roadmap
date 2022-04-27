@@ -2,7 +2,7 @@
 
 ## 中国剩余定理
 
-$\left\{\begin{matrix}x\equiv a_1\bmod m_1\\ x\equiv a_2\bmod m_2\\ ... \\x\equiv a_n\bmod m_n\end{matrix}\right.$
+$$\left\{\begin{matrix}x\equiv a_1\bmod m_1\\ x\equiv a_2\bmod m_2\\ ... \\x\equiv a_n\bmod m_n\end{matrix}\right.$$
 
 其中 $m_i$ 两两互质
 
@@ -73,18 +73,20 @@ Let set $A$ be all factor of $\gcd(a, b)$, and let set $B$ be all factor of $\gc
 
 It means $A=B$, so $\gcd(a,b)_{max}=\gcd(b, a\% b)_{max}$
 
-```python
-def gcd(a, b):
-    if(b==0):
-        return a
-    return gcd(b, a%b)
-```
+=== "Python"
+    ``` python
+    def gcd(a, b):
+        if(b==0):
+            return a
+        return gcd(b, a%b)
+    ```
 
-```c++
-int gcd(int a, int  b) {
-    return b?gcd(b, a%b):a;
-}
-```
+=== "C++"
+    ``` c++
+    int gcd(int a, int  b) {
+        return b?gcd(b, a%b):a;
+    }
+    ```
 
 ## 扩展欧几里得算法
 
@@ -93,26 +95,28 @@ $$x(\left \lfloor \frac{a}{b} \right \rfloor\times b + a\% b) + yb = r$$
 $$(x\left \lfloor \frac{a}{b} \right \rfloor+y)b + xa\% b=r$$
 $$\left\{\begin{matrix} x'=x\left \lfloor \frac{a}{b} \right \rfloor+y\\ y'=x\end{matrix}\right.\Rightarrow \left\{\begin{matrix}x=y'\\ y=x'-y'\left \lfloor \frac{a}{b} \right \rfloor\end{matrix}\right.$$
 
-```python
-def exgcd(a, b):
-#    if(a<b):
-#        a, b = b, a
-    if(b==0):
-        return 1, 0, a
-    x1, y1, r = exgcd(b, a%b)
-    x = y1
-    y = x1-(a//b)*y1
-    return x, y, r
-```
+=== "Python"
+    ```python
+    def exgcd(a, b):
+    #    if(a<b):
+    #        a, b = b, a
+        if(b==0):
+            return 1, 0, a
+        x1, y1, r = exgcd(b, a%b)
+        x = y1
+        y = x1-(a//b)*y1
+        return x, y, r
+    ```
 
-```c++
-int exgcd(int a, int b, int &x, int &y) {
-    if(!b) {
-        x=1, y=0;
-        return a;
+=== "C++" 
+    ```c++
+    int exgcd(int a, int b, int &x, int &y) {
+        if(!b) {
+            x=1, y=0;
+            return a;
+        }
+        int d = exgcd(b, a%b, y, x);
+        y-=(a/b)*x;
+        return d;
     }
-    int d = exgcd(b, a%b, y, x);
-    y-=(a/b)*x;
-    return d;
-}
-```
+    ```
