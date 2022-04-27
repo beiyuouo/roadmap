@@ -62,6 +62,12 @@ $$
 
 ![](../../../assets/images/machine-learning/deep-learning/attention/transformer-architecture.jpg)
 
+可以看到 Transformer Encoder 模块用到的 Attention 的三个输入均是 X，所以也叫自注意力（Self-Attention）。在 Decoder 中，两个输入来自 Encoder，另一个来自 Embedding。
+
+值得一提的是，其实 Transformer 可以看成是 CNN 的加强版，因为 CNN 由于卷积核的存在，相当于值关注于卷积核内的区域，而 Transformer 则是关注全局内容。CNN 通过下采样获得更大的感受野之后，才能达到 Transformer 的效果。而且并不是由于 Attention 的结构才有的 Transformer，而是由 Transformer 的所有 Module 共同作用的。
+
+后续的许多内容也是有关上面所述各 Module 的改进，笔者有时间也会跟进一下最近的研究工作。
+
 ### Code Implementation
 
 TBD
