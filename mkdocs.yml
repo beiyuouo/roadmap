@@ -128,15 +128,15 @@ nav:
           - "computer-science/robotics/index.md"
           - "ROS": "computer-science/robotics/ros.md"
       - "编程相关":
-          - "computer-science/program/index.md"
-          - "Git": "computer-science/program/git.md"
+          - "computer-science/programming/index.md"
+          - "Git": "computer-science/programming/git.md"
           - "IDE":
-              - "computer-science/program/ide/index.md"
-              - "VSCode": "computer-science/program/ide/vscode.md"
+              - "computer-science/programming/ide/index.md"
+              - "VSCode": "computer-science/programming/ide/vscode.md"
           - "Python":
-              - "computer-science/program/python/index.md"
-              - "pytorch": "computer-science/program/python/pytorch.md"
-              - "jinja2": "computer-science/program/python/jinja2.md"
+              - "computer-science/programming/python/index.md"
+              - "pytorch": "computer-science/programming/python/pytorch.md"
+              - "jinja2": "computer-science/programming/python/jinja2.md"
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
