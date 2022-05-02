@@ -127,12 +127,16 @@ nav:
       - "机器人学":
           - "computer-science/robotics/index.md"
           - "ROS": "computer-science/robotics/ros.md"
-      - "编程语言":
-          - "computer-science/programming-language/index.md"
+      - "编程相关":
+          - "computer-science/program/index.md"
+          - "Git": "computer-science/program/git.md"
+          - "IDE":
+              - "computer-science/program/ide/index.md"
+              - "VSCode": "computer-science/program/ide/vscode.md"
           - "Python":
-              - "computer-science/programming-language/python/index.md"
-              - "pytorch": "computer-science/programming-language/python/pytorch.md"
-              - "jinja2": "computer-science/programming-language/python/jinja2.md"
+              - "computer-science/program/python/index.md"
+              - "pytorch": "computer-science/program/python/pytorch.md"
+              - "jinja2": "computer-science/program/python/jinja2.md"
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
@@ -142,9 +146,6 @@ nav:
           - "Web 3.0": "computer-science/metaverse/web-3-0.md"
           - "NFT": "computer-science/metaverse/nft.md"
           - "区块链": "computer-science/metaverse/blockchain.md"
-      - "Misc":
-          - "computer-science/misc/index.md"
-          - "Git": "computer-science/misc/git.md"
 
   - "机器学习":
       - "machine-learning/index.md"
