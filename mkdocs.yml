@@ -137,6 +137,8 @@ nav:
               - "computer-science/programming/python/index.md"
               - "pytorch": "computer-science/programming/python/pytorch.md"
               - "jinja2": "computer-science/programming/python/jinja2.md"
+              - "mpi": "computer-science/programming/python/mpi.md"
+
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
