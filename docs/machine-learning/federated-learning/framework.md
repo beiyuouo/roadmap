@@ -125,9 +125,10 @@ Code: [https://github.com/FedML-AI/FedML](https://github.com/FedML-AI/FedML)
 
 Docs: [https://doc.fedml.ai/](https://doc.fedml.ai/)
 
-优点：
+Architecture:
 
-缺点：
+- 利用 MPI/NPCC 进行底层进程驱动，当然也提供了 SingleThread 的版本
+- 实现了多种通讯协议的支持
 
 ### OpenFed
 
@@ -177,17 +178,24 @@ Architecture:
 
 > 今日[2022.5.5]刚开源的项目
 
+- 利用 yacs 配置文件
+- gRPC 通信协议
+- 提供了 Dockerfile
+- 以事件驱动的消息队列，异步处理
+- 可以自定义的计算资源，通过 register 来注册
+- Auto-tuning
+- 提供多种隐私保护机制，同态加密、差分隐私，以及攻击方法
+- 提供了 attack 方法
+
 ## Framework Comparison
 
-在这一节，会用几个不同的维度来对比这些框架
+在这一节，会用几个不同的维度来对比这些框架，还未完成，仅占位。
 
 ## Summary
 
-[comment]: <> (
-| Framework | Sync | HFL | VFL | Hetero | Async | Encrypt | Cross Platform |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **FATE** | :white_check_mark: | :white_check_mark: | :white_check_mark:| :white_check_mark: | :x: | :white_check_mark: | :x: |
-)
+|     Framework      |        Sync        |        HFL         |        VFL         |       Hetero       | Async |      Encrypt       | Cross Platform |
+| :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :---: | :----------------: | :------------: |
+| **FederatedScope** | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  :x:  | :white_check_mark: |      :x:       |
 
 ## Reference
 

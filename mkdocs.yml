@@ -123,7 +123,7 @@ nav:
           - "computer-science/software-architecture/index.md"
       - "操作系统":
           - "computer-science/operating-system/index.md"
-          - "ubuntu": "computer-science/operating-system/ubuntu.md"
+          - "Ubuntu": "computer-science/operating-system/ubuntu.md"
       - "机器人学":
           - "computer-science/robotics/index.md"
           - "ROS": "computer-science/robotics/ros.md"
@@ -135,14 +135,15 @@ nav:
               - "VSCode": "computer-science/programming/ide/vscode.md"
           - "Python":
               - "computer-science/programming/python/index.md"
-              - "pytorch": "computer-science/programming/python/pytorch.md"
+              - "PyTorch": "computer-science/programming/python/pytorch.md"
               - "jinja2": "computer-science/programming/python/jinja2.md"
               - "mpi": "computer-science/programming/python/mpi.md"
 
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
-          - "hugo": "computer-science/blog-engine/hugo.md"
+          - "Hugo": "computer-science/blog-engine/hugo.md"
+
       - "元宇宙":
           - "computer-science/metaverse/index.md"
           - "Web 3.0": "computer-science/metaverse/web-3-0.md"
