@@ -138,7 +138,11 @@ nav:
               - "PyTorch": "computer-science/programming/python/pytorch.md"
               - "jinja2": "computer-science/programming/python/jinja2.md"
               - "mpi": "computer-science/programming/python/mpi.md"
-
+              - "PyTest": "computer-science/programming/python/pytest.md"
+      - "密码学":
+          - "computer-science/cryptography/index.md"
+          - "差分隐私": "computer-science/cryptography/difference-privacy.md"
+          - "同态加密": "computer-science/cryptography/homomorphic-encryption.md"
       - "博客引擎":
           - "computer-science/blog-engine/index.md"
           - "mkdocs": "computer-science/blog-engine/mkdocs.md"
