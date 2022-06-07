@@ -47,3 +47,18 @@ git reset --hard ef9e8b # 回退到 ef9e8b 版本
 git reflog # 查看 reflog 就可以知道回退版本的 commit id
 git reset --hard "" # 恢复到指定的版本
 ```
+
+## sparse checkout
+
+有时候你可能不想要获取一个大 repository 的所有内容，只想获取一部分内容，这时候就可以使用 sparse checkout 命令。
+
+```bash
+mkdir <repo>
+cd <repo>
+git init
+git remote add -f origin <url>
+git config core.sparsecheckout true
+echo "<some_dirs>" >> .git/info/sparse-checkout
+echo "!<some_dirs>" >> .git/info/sparse-checkout
+git pull origin main
+```
