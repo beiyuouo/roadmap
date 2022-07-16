@@ -19,3 +19,7 @@
 术语表：[link](https://developers.google.cn/machine-learning/glossary/?hl=zh-CN)
 
 论文检索：[ai-paper-collector](https://ai-paper-collector.vercel.app/)
+
+顶会: [top-conference-and-journal](./top-conference-and-journal/)
+
+深度学习数学符号规范: [PDF](../assets/pdf/深度学习论文写作之数学符号规范表示合集.pdf)

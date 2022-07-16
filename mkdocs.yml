@@ -127,32 +127,10 @@ nav:
       - "机器人学":
           - "computer-science/robotics/index.md"
           - "ROS": "computer-science/robotics/ros.md"
-      - "编程相关":
-          - "computer-science/programming/index.md"
-          - "Git": "computer-science/programming/git.md"
-          - "IDE":
-              - "computer-science/programming/ide/index.md"
-              - "VSCode": "computer-science/programming/ide/vscode.md"
-          - "Python":
-              - "computer-science/programming/python/index.md"
-              - "PyTorch": "computer-science/programming/python/pytorch.md"
-              - "jinja2": "computer-science/programming/python/jinja2.md"
-              - "mpi": "computer-science/programming/python/mpi.md"
-              - "PyTest": "computer-science/programming/python/pytest.md"
       - "密码学":
           - "computer-science/cryptography/index.md"
           - "差分隐私": "computer-science/cryptography/difference-privacy.md"
           - "同态加密": "computer-science/cryptography/homomorphic-encryption.md"
-      - "博客引擎":
-          - "computer-science/blog-engine/index.md"
-          - "mkdocs": "computer-science/blog-engine/mkdocs.md"
-          - "Hugo": "computer-science/blog-engine/hugo.md"
-
-      - "元宇宙":
-          - "computer-science/metaverse/index.md"
-          - "Web 3.0": "computer-science/metaverse/web-3-0.md"
-          - "NFT": "computer-science/metaverse/nft.md"
-          - "区块链": "computer-science/metaverse/blockchain.md"
 
   - "机器学习":
       - "machine-learning/index.md"
@@ -168,5 +146,31 @@ nav:
       - "联邦学习":
           - "machine-learning/federated-learning/index.md"
           - "框架": "machine-learning/federated-learning/framework.md"
+
+  - "前后端开发":
+      - "development/index.md"
+      - "Git": "development/git.md"
+      - "IDE":
+          - "development/ide/index.md"
+          - "VSCode": "development/ide/vscode.md"
+          - "PyCharm": "development/ide/pycharm.md"
+      - "Python":
+          - "development/python/index.md"
+          - "PyTorch": "development/python/pytorch.md"
+          - "jinja2": "development/python/jinja2.md"
+          - "mpi": "development/python/mpi.md"
+          - "PyTest": "development/python/pytest.md"
+      - "博客引擎":
+          - "development/blog-engine/index.md"
+          - "mkdocs": "development/blog-engine/mkdocs.md"
+          - "Hugo": "development/blog-engine/hugo.md"
+
+  - "前沿技术":
+      - "technology/index.md"
+      - "元宇宙":
+          - "technology/metaverse/index.md"
+          - "Web 3.0": "technology/metaverse/web-3-0.md"
+          - "NFT": "technology/metaverse/nft.md"
+          - "区块链": "technology/metaverse/blockchain.md"
 
   - "About": "about.md"
