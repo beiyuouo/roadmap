@@ -23,3 +23,7 @@
 顶会: [top-conference-and-journal](./top-conference-and-journal/)
 
 深度学习数学符号规范: [PDF](../assets/pdf/深度学习论文写作之数学符号规范表示合集.pdf)
+
+神经网络可视化 PPT: [ML Visuals](https://docs.google.com/presentation/d/11mR1nkIR9fbHegFkcFq8z9oDQ5sjv8E3JJp1LfLGKuk/edit?usp=sharing)
+
+神经网络结构可视化: [netron](https://github.com/lutzroeder/netron)
